@@ -11,6 +11,6 @@
     "socket.io": "^4.7.3"
   },
   "scripts": {
-    "server": "nodemon index.js"
+    "server": "node ./index.js"
   }
 }
