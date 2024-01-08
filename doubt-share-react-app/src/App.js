@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 import AllRoutes from './components/pages/AllRoutes';
 // import io from "socket.io-client";
-// const socket = io("http://localhost:3300");
+// const socket = io("https://doubt-share-oacc.onrender.com");
 
 function App() {
 

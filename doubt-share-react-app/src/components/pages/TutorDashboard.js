@@ -95,19 +95,42 @@ const TutorDashboard = () => {
             <TutorNavBar />
 
             {activeQuery ?
-                <Box p={4} borderWidth="1px" borderRadius="md" my={2}>
-                    <div>
+                <Box
+
+                    borderWidth="1px"
+                    borderRadius="md"
+                    w={"40%"}
+                    m={"auto"}
+                    my={2}
+                    boxShadow="md"
+                    zIndex={1}
+                    bg="white"
+                    overflow="hidden"
+                    p={4}
+                    transition="box-shadow 0.3s ease-in-out"
+                    _hover={{
+                        boxShadow: "0 0 10px rgba(0, 0, 0, 0.3)",
+                    }}
+
+                >
+                    <div style={{ marginBottom: "1%" }}>
                         <strong>Student ID:</strong> {activeQuery.studentId}
                     </div>
-                    <div>
-                        <strong>Subject Type:</strong> {activeQuery.subjectType.join(', ')}
+                    <div style={{ marginBottom: "1%" }}>
+                        <strong>Student Name:</strong> {activeQuery.studentName}
                     </div>
-                    <div>
+                    <div style={{ marginBottom: "1%" }}>
+                        <strong>Subject Type:</strong> {activeQuery.subjectType.join(", ")}
+                    </div>
+                    <div style={{ marginBottom: "1%" }}>
                         <strong>Status:</strong> {activeQuery.status}
                     </div>
-                    <div>
-                        <strong>Timestamp:</strong> {new Date(activeQuery.timeStamp).toLocaleString()}
+                    <div style={{ marginBottom: "1%" }}>
+                        <strong>Timestamp:</strong>{" "}
+                        {new Date(activeQuery.timeStamp).toLocaleString()}
                     </div>
+
+
                     <Button colorScheme="green" onClick={handleAccept}>
                         Accept
                     </Button>

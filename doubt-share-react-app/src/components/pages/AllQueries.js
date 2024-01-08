@@ -12,7 +12,7 @@ const AllQueries = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch('http://localhost:3300/allQuery', {
+            const response = await fetch('https://doubt-share-oacc.onrender.com/allQuery', {
                 method: "GET", mode: "cors",
                 headers: {
                     "Authorization": token

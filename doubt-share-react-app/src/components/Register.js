@@ -15,7 +15,7 @@ import {
 
 const Register = () => {
 
-    const SERVER_URL = "http://localhost:3300";
+    const SERVER_URL = "https://doubt-share-oacc.onrender.com";
     const navigate = useNavigate();
 
     const [formData, setFormData] = useState({

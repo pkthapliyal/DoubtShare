@@ -12,7 +12,7 @@ import {
 
 
 const StudentLogin = () => {
-    const SERVER_URL = "http://localhost:3300";
+    const SERVER_URL = "https://doubt-share-oacc.onrender.com";
     const navigate = useNavigate();
 
 

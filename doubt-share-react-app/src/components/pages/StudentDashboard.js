@@ -8,7 +8,7 @@ import NavBar from '../NavBar';
 
 const StudentDashboard = () => {
 
-    const SERVER_URL = "http://localhost:3300"
+    const SERVER_URL = "https://doubt-share-oacc.onrender.com"
     let socket = initializeSocket();
     const studentId = localStorage.getItem("studentId");
     const token = localStorage.getItem("token");

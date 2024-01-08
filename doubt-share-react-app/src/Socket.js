@@ -5,14 +5,14 @@ import { io } from 'socket.io-client';
 
 // export const initializeSocket = () => {
 //     if (!socket) {
-//         socket = io('http://localhost:3300');
+//         socket = io('https://doubt-share-oacc.onrender.com');
 //     }
 //     return socket;
 // };
 let socket;
 export const initializeSocket = () => {
 
-    socket = io('http://localhost:3300');
+    socket = io('https://doubt-share-oacc.onrender.com');
     return socket;
 };
 

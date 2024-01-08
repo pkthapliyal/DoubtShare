@@ -38,7 +38,7 @@ const TutorTable = (props) => {
             // Example usage
             const uniqueKey = generateRandomString();
 
-            const query = { tutorId, studentId: studentDetails._id, status: "pending", timeStamp: new Date(), uniqueKey, subjectType: studentDetails.subjectType }
+            const query = { tutorId, studentId: studentDetails._id, status: "pending", timeStamp: new Date(), uniqueKey, subjectType: studentDetails.subjectType, studentName: studentDetails.name }
             // Emit the requestQuery event with tutorId
             socket.emit("requestQuery", query);
 

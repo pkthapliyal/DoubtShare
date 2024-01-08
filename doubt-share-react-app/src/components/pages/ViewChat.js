@@ -14,7 +14,7 @@ const ViewChat = () => {
 
     const fetchData = async () => {
         try {
-            const response = await fetch(`http://localhost:3300/conversation/${conversationId}`, {
+            const response = await fetch(`https://doubt-share-oacc.onrender.com/conversation/${conversationId}`, {
                 method: "GET", mode: "cors",
                 headers: {
                     "Authorization": token
