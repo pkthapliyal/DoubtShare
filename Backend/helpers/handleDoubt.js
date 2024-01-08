@@ -98,6 +98,7 @@ const initializeTutorSocket = (io) => {
         //  tutor and student messagesing 
         socket.on('sendMessage', async (data) => {
             const { roomName, message, role, conversationId, timeStamp } = data;
+            io.to(roomName).emit('receiveMessage', data);
             console.log("Data message ", data)
             try {
 
@@ -110,7 +111,6 @@ const initializeTutorSocket = (io) => {
                 console.log("Error while updatinh Conversation")
             }
 
-            io.to(roomName).emit('receiveMessage', data);
 
         });
 
