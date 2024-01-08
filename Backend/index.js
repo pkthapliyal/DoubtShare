@@ -8,11 +8,12 @@ const server = http.createServer(app);
 app.use(cors());
 const { initializeTutorSocket } = require('./helpers/handleDoubt');
 
-// "https://doubt-share-919bm8jez-pkthapliyal.vercel.app/"
+
+// http://localhost:3000
 // new socket server
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:3000",
+        origin: "https://doubt-share-qdc38vh8c-pkthapliyal.vercel.app/",
         methods: ["GET", "POST", "PUT", "DELETE", "PATCH"]
     }
 })
